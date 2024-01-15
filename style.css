@@ -1,0 +1,325 @@
+:root {
+    --clr-neutral-100: hsl(90, 20%, 98%);
+    --clr-neutral-900: hsl(90, 25%, 15%);
+
+    --clr-primary: hsl(90, 20%, 93%);
+
+    --clr-bg: var(--clr-neutral-100);
+    --clr-txt: var(--clr-neutral-900);
+
+    --ff-primary: 'Poppins', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    font-size: 62.5%;
+    --fs-100: 1rem;
+    --fs-300: 1.4rem;
+    --fs-400: 1.6rem;
+    --fs-500: 2rem;
+    --fs-600: 2.2rem;
+    --fs-700: 3.2rem;
+    --fs-800: 4rem; 
+    --fs-900: 6.4rem;
+
+    --fs-body: var(--fs-400);
+    --fs-heading: var(--fs-600);
+    --fs-hero-heading: var(--fs-900);
+    --fs-hero-subheading: var(--fs-700);
+}
+
+@media (width <= 31.25em) {
+    :root {
+        --fs-body: var(--fs-300);
+        --fs-heading: var(--fs-500);
+        --fs-hero-heading: var(--fs-800);
+        --fs-hero-subheading: var(--fs-400);
+    }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html,
+body {
+    height: 100%
+}
+
+/* Set core body defaults */
+body {
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+/* h1, h2,
+h3, h4 {
+  text-wrap: balance;
+} */
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg  {
+  max-width: 100%;
+  display: block;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Utility classes */
+
+.bold {
+    font-weight: var(--fw-bold);
+}
+
+.coming-soon {
+    position: relative;
+    cursor: not-allowed;
+}
+
+.coming-soon::before {
+    content: "Kommer snart";
+    color: #fff;
+    font-size: var(--fs-600);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* General styling */
+
+body {
+    font-size: var(--fs-body);
+    font-family: var(--ff-primary);
+    background-color: var(--clr-bg);
+    color: var(--clr-txt);
+
+}
+
+header, main {
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+/* Header */
+
+.site-header {
+    height: 7.5rem;
+}
+
+.inner-header {
+    height: 100%;
+    display: flex;
+    column-gap: 4.8rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4.8rem;
+}
+
+.site-logo, .site-logo:visited {
+    font-size: var(--fs-600);
+    font-weight: var(--fw-black);
+    text-decoration: none;
+    color: var(--clr-neutral-900);
+}
+
+
+/* Main */
+
+.inner-main {
+    padding: 0 4.8rem;
+}
+
+.inner-main.md {
+    padding: 0 24.8rem;
+}
+
+.hero {
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    justify-content: center;
+}
+
+.hero-heading {
+    text-align: center;
+    letter-spacing: -0.08rem;
+    font-size: var(--fs-hero-heading);
+    font-weight: var(--fw-bold);
+}
+
+.hero-subheading {
+    text-align: center;
+    font-size: var(--fs-hero-subheading);
+    letter-spacing: -0.032rem;
+}
+
+.chapter-section-title {
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-bold);
+    margin-bottom: 1.2rem;
+}
+
+.chapter-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1.6rem;
+    row-gap: 2.4rem;
+}
+
+.chapter-card {
+    background-color: var(--clr-primary);
+    height: 16rem;
+    border-radius: 1rem;
+    padding-bottom: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chapters {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    column-gap: 10rem;
+    row-gap: 0.8rem;;
+}
+
+.subchapter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0 solid #e5e7eb;
+    border-bottom-width: 1px;
+
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.subchapter > p {
+    padding-bottom: 0.5rem;
+}
+
+/* Articles */
+.article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+.article-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.article-heading {
+    letter-spacing: -0.08rem;
+    font-size: var(--fs-hero-heading);
+    font-weight: var(--fw-bold);
+}
+
+.article-sub-heading {
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-bold);
+    margin-top: 4rem;
+    margin-bottom: 1.2rem;
+    border-left: 0.5rem solid var(--clr-neutral-900);
+    padding-left: 1rem;
+}
+
+.breadcrumb {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.eq {
+    margin-left: 3rem;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--clr-neutral-900);
+    color: var(--clr-neutral-100);
+
+    height: 30rem;
+    margin-top: 14.4rem;
+    padding: 2.4rem 4.8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (width <= 66.5em) {
+    .chapter-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (width <= 34.375em) {
+    .chapter-cards {
+        grid-template-columns: 1fr;
+    }
+}

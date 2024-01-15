@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://qvickmatte.se/favico.svg?v=2" type="image/x-icon">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ["\\(", "\\)"]],
+            processEscapes: true,
+          }
+        }
+      </script>
+    <link rel="stylesheet" href="../../style.css">
+    <title>Uttryck - Matematik ÅK 9 | qvickmatte</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="inner-header md">
+            <a href="../../" class="site-logo">qvick</a>
+        </div>
+    </header>
+    <main>
+        <div class="inner-main md">
+            <div class="hero">
+                <nav class="breadcrumb">
+                    <a href="../..">Årskurs 9</a>
+                    <span>/</span>
+                    <a href="..">Algebra</a>
+                </nav>
+                <h1 class="article-heading">Uttryck</h1>
+            </div>
+            <div class="article">
+                <section class="article-section">
+                    <h3 class="article-sub-heading">Vad är ett uttryck?</h3>
+                    <p>Ett matematiskt uttryck är en kombination av tal, variabler och räkneoperationer. Två exempel är \(x+7\) och \(3x-2\).</p>
+                    <p>Uttryck används för att uttrycka oss matematiskt. Precis som hur vi kan uttrycka oss i svenskan, kan vi skriva uttryck på ett matematiskt språk.</p>
+                    <p class="bold">Exempel</p>
+                    <p>Du har en legolåda med ett obestämt antal legoklossar och din vän har två sådana likadana legolådor. Med den här informationen kan vi skriva ett matematiskt uttryck som beskriver hur många legoklossar du och din vän har tillsammans.</p>
+                    <p>Eftersom vi inte vet hur många klossar du har i din låda kan vi använda oss av en variabel för att ange mängden klossar. Det går bra att använda vilken bokstav som helst och för det här exemplet låter vi \(x\) motsvara mängden klossar i en låda.</p>
+                    <p>Det betyder att du har \(x\) stycken legoklossar. Eftersom din vän har två legolådor som är likadana som din, kan vi skriva att din vän har \(2x\) legoklossar, alltså dubbelt så många som du. Notera att \(2 \cdot x\) skrivs \(2x\).</p>
+                    <p>Tillsammans har du och din vän alltså \(x+2x\) legoklossar. \(x+2x\) är ett matematiskt uttryck som beskriver den verkliga situationen vi precis gått igenom.</p>
+                </section>
+                <section class="article-section">
+                    <h3 class="article-sub-heading">Förenkla uttryck</h3>
+                    <p>I många fall kan vi förenkla våra uttryck. Istället för att din vän ber dig köpa \(3\) kexchoklad, sedan \(4\) till och till sist ytterliggare \(7\) vore det enklare (och du hade sluppit springa till affären tre gånger) om din "vän" bad dig köpa \(3+4+7=14\) kexchoklad. Jag hade iallafall inte bjudit kompisen på en kexchoklad om de ska vara så jobbiga.</p>
+                    <p>När vi förenklar våra uttryck handlar det om att "slå ihop" lika termer. Om vi återgår till vårt exempel med legolådor så såg vi att vi kan uttrycka antalet legoklossar som $x+2x$, detta uttryck kan vi förenkla genom att “slå ihop” de två termerna och får då $x+2x=3x$.</p>
+                    <p>På samma sätt förenklar vi uttrycket $x+7+3x+5-3$ som $4x+9$.</p>
+                </section>
+                <section class="article-section">
+                    <h3 class="article-sub-heading">Parentesuttryck</h3>
+                    <p>Det kan i många fall vara användbart att gruppera termer i ett uttryck. Detta gör vi med hjälp av parenteser.</p>
+                    <p class="bold">Exempel</p>
+                    <p>Natanael har $4$ godisar mer än Simeon, Emmy har dubbelt så många godisar som Natanael. Om vi säger att Simeon har $x$ godisar, hur kan vi uttrycka antalet godisar Natanael respektive Emmy har?</p>
+                    <p class="bold">Lösning</p>
+                    <p>Simeon har $x$ godisar, det betyder att Natanael har $x+4$ godisar och Emmy har $2(x+4)$. Eftersom Emmy har dubbelt så många godisar som Natanael är det viktigt att vi har $x+4$ inom en parentes. Skulle vi inte ha parentesen hade vi fått uttrycket $2x+4$ vilket vi kan läsa som "$4$ fler godisar än dubbelt så många godisar som Simeon har".</p>
+                </section>
+                <section class="article-section">
+                    <h3 class="article-sub-heading">Utveckla parentesuttryck</h3>
+                    <p>När vi räknar med parenteser brukar vi säga att vi utvecklar parentesen. För att kunna göra detta behöver vi först repetera räknereglerna kopplade till addition och subtraktion med parenteser.</p>
+                    <p class="bold">Addition och subtraktion med parenteser</p>
+                    <p>Vid addition med parenteser gäller följande räkneregler:</p>
+                    <p class="eq">$a+(b+c)=a+b+c$</p>
+                    <p class="eq">$a+(b-c)=a+b-c$</p>
+                    <p>Vi kan tolka räknereglerna som att när vi adderar en parentes kan vi ta bort parentesen utan att behöva ändra något.</p>
+                    <p>När vi istället subtraherar en parentes ser räknereglerna ut så här:</p>
+                    <p class="eq">$a-(b+c)=a-b-c$</p>
+                    <p class="eq">$a-(b-c)=a-b+c$</p>
+                    <p>Vi kan tolka ovanstående räkneregler som att när vi subtraherar en parentes kan vi ta bort parentesen om vi samtidigt byter tecken på alla termer i parentesen.</p>
+                </section>
+                <section class="article-section">
+                    <h3 class="article-sub-heading">Multiplikation med parentesuttryck</h3>
+                    <p>Vid multiplikation med parentes ser räknereglerna ut så här:</p>
+                    <p class="eq">$a(b+c)=ab+ac$</p>
+                    <p class="eq">$a(b-c)=ab-ac$</p>
+                    <p>Den här regeln kallas för den distributiva lagen och vi säger att vi multiplicerar in faktorn $a$ i parentesen. Då blir resultatet att varje term i parentesen multipliceras med $a$.</p>
+                    <p>När vi multiplicerar två parentesuttryck med varandra gäller följande:</p>
+                    <p class="eq">$(a+b)(c+d)=ac+ad+bc+bd$</p>
+                    <p>Vi ser att vi multiplicerar båda termerna i första parentes med de båda termerna i andra parentesen.</p>
+                    <p>Ett sätt att visuellt förstå varför parentesmultiplikation ser ut som den gör är att föreställa sig en rektangel med sidlängd $a+b$ och $c+d$. Rektangelns area får vi genom att multiplicera sidorna med varandra alltså:</p>
+                    <p class="eq">$A=(a+b)(c+d)$</p>
+                    <p>Genom att bryta upp rektangeln i fyra mindre rektanglar med sidlängderna $a$ och $c$, $a$ och $d$, $b$ och $c$, $b$ och $d$ ser vi att den större rektangelns area är lika stor som summan av de små rektanglarnas areor.</p>
+                    <img src="/images/parentesmultiplikation.svg" alt="">
+                    <p></p>
+                    <hr>
+                    <p><span class="bold">Exempel:</span> Utveckla uttrycket $4(x+2)$.</p>
+                    <p style="margin-bottom: 3rem;"><span class="bold">Lösning:</span> Enligt distributiva lagen får vi att $4(x+2)=4 \cdot x+ 4 \cdot 2=4x+8$.</p>
+                    <p><span class="bold">Exempel:</span> Utveckla uttrycket $7(3-y)$.</p>
+                    <p style="margin-bottom: 3rem;"><span class="bold">Lösning:</span> Enligt distributiva lagen får vi att $7(3-y)=7\cdot 3 - 7 \cdot y=21-7y$.</p>
+                    <p><span class="bold">Exempel:</span> Utveckla uttrycket $(x+2)(6+y)$.</p>
+                    <p><span class="bold">Lösning:</span> Enligt distributikva lagen får vi att $(x+2)(6+y)=x \cdot 6 + x \cdot y + 2 \cdot 6 + 2 \cdot y = 6x+xy+12+2y$.</p>
+                </section>
+                <section class="article-section">
+                    <h3 class="article-sub-heading">Kvadreringsreglerna</h3>
+                    <p>Ett specialfall av ovanstående parentesmultiplikation är då vi multiplicerar $(a+b)$ med sig själv. Det ser ut så här:</p>
+                    <p class="eq">$(a+b)^2=(a+b)(a+b)=aa+ab+ba+bb=a^2+2ab+b^2$</p>
+                    <p>Detta kallas för första kvadreringsregeln. Andra kvadreringsregeln ser ut så här:</p>
+                    <p class="eq">$(a-b)^2=a^2-2ab+b^2$</p>
+                    <p>Testa gärna själv att utveckla $(a-b)^2$ och se varför ovanstående stämmer.</p>
+                    <p>Kvadreringsreglerna får sina namn från att vi kvadrerar parentesuttrycket (höjer upp det till 2).</p>
+                    <p>Sammanfattningsvis får vi att:</p>
+                    <p class="eq">$(a+b)^2=a^2+2ab+b^2$</p>
+                    <p class="eq">$(a-b)^2=a^2-2ab+b^2$</p>
+                    <p></p>
+                    <p>Ett visuellt bevis till varför första kvadreringsregeln stämmer ser du i bilden nedan. Vi har en kvadrat med sidlängd $a+b$. Kvadratens area får vi av $(a+b)^2$ och vi ser att den är densamma som de fyra fyrhörningar som bildar kvadraten.</p>
+                    <img src="/images/kvadregl.svg" alt="">
+                    <hr>
+                    <p><span class="bold">Exempel:</span> Utveckla uttrycket $(x+4)^2$.</p>
+                    <p style="margin-bottom: 3rem;"><span class="bold">Lösning:</span> Enligt första kvadreringsregeln får vi att $(x+4)^2=x^2+2 \cdot x \cdot 4 + 4^2=x^2+8x+16$.</p>
+                    <p><span class="bold">Exempel:</span> Utveckla uttrycket $(7-x)^2$.</p>
+                    <p><span class="bold">Lösning:</span> Enligt andra kvadreringsregeln får vi att $(7-x)^2=7^2-2\cdot 7 \cdot x +x^2=49-14x+x^2$.</p>
+                </section>
+                <section class="article-section">
+                    <h3 class="article-sub-heading">Konjugatregeln</h3>
+                    <p>Ett annat specialfall av parentesmultiplikation kallas konjugatregeln och ser ut så här:</p>
+                    <p class="eq">$(a+b)(a-b)=a^2-b^2$</p>
+                    <p>Testa gärna själv att utföra multiplikationen och se att den stämmer.</p>
+                    <p>Inom matematiken säger vi att $(a+b)$ och $(a-b)$ är så kallade konjugater, därav namnet konjugatregeln.</p>
+                    <p></p>
+                    <hr>
+                    <p><span class="bold">Exempel:</span> Beräkna $(x+3)(x-3)$.</p>
+                    <p><span class="bold">Lösning:</span> Enligt konjugatregeln får vi att $(x+3)(x-3)=x^2-3^2=x^2-9$.</p>
+                </section>
+                <section class="article-section">
+                    <h3 class="article-sub-heading">Faktorisera uttryck</h3>
+                    <p>Vi har nu lärt oss att utveckla parentesuttryck genom att använda oss av distributiva lagen och har även bekantat oss med kvadreringsreglerna och konjugatregeln.</p>
+                    <p>Ofta är det användbart att skriva om en summa av flera termer som en produkt av parenteser. Det kallas för faktorisering. Namnet kommer ifrån att vi skriver om uttrycket så det består av faktorer som multipliceras med varandra.</p>
+                    <p>Vi faktoriserar ett uttryck genom att bryta ut den största gemensamma faktorn från alla termer.</p>
+                    <p><span class="bold">Exempel:</span> Faktorisera uttrycket $5x+25$.</p>
+                    <p><span class="bold">Lösning:</span> Vi ser att både $5x$ och $25$ går att dela jämnt med $5$, de har alltså den största gemensamma faktorn $5$. För att faktorisera uttrycket bryter vi ut $5$:an och skriver $5(x+5)$. Som du ser har vi skrivit om uttrycket $5x+25$ som en produkt av de två faktorerna $5$ och $(x+5)$ - vi har faktoriserat uttrycket!</p>
+                    <p></p>
+                    <p>Om vi vill faktorisera uttrycket $64-y^2$ ser vi ganska snabbt att termerna inte har någon gemensam delare. Men uttrycket går fortfarande att skriva som en produkt av två faktorer - med hjälp av konjugatregeln!</p>
+                    <p>Kvadreringsreglerna och konjugatregeln går utmärkt att använda baklänges för att faktorisera uttryck! Vi får att:</p>
+                    <p class="eq">$a^2+2ab+b^2=(a+b)^2$</p>
+                    <p class="eq">$a^2-2ab+b^2=(a-b)^2$</p>
+                    <p class="eq">$a^2-b^2=(a+b)(a-b)$</p>
+                    <p>Notera att $(a+b)^2$ samt $(a-b)^2$ är faktoriserade eftersom de betyder $(a+b)(a+b)$ respektive $(a-b)(a-b)$.</p>
+                    <p>Vi ser att $64=8^2$, därmed kan vi faktorisera uttrycket $64-y^2$ genom att tillämpa konjugatregeln och skriva det som $(8+y)(8-y)$.</p>
+                    <hr>
+                    <p><span class="bold">Exempel:</span> Faktorisera uttrycket $49x+14$.</p>
+                    <p style="margin-bottom: 3rem;"><span class="bold">Lösning:</span> Vi ser att de båda termerna kan delas med $7$ och får därför att $49x+14=7(7x+2)$.</p>
+                    <p><span class="bold">Exempel:</span> Faktorisera uttrycket $16xy+12y$.</p>
+                    <p style="margin-bottom: 3rem;"><span class="bold">Lösning:</span> Vi ser att de båda termerna kan delas jämnt med $4y$ och får därför att $16xy+12y=4y(4x+3)$.</p>
+                    <p><span class="bold">Exempel:</span> Faktorisera uttrycket $x^2+12x+36$.</p>
+                    <p style="margin-bottom: 3rem;"><span class="bold">Lösning:</span> Uttryckets termer saknar gemensam delare, däremot känner vi igen formen som kvadreringsregeln. Vi vet att $36=6^2$ och kan alltså faktorisera uttrycket till $(x+6)^2$.</p>
+                    <p><span class="bold">Exempel:</span> Faktorisera uttrycket $4x^2-25y^2$.</p>
+                    <p><span class="bold">Lösning:</span> I första anblick ser det här uttrycket kanske krångligt ut. Men efter att ha undersökt termerna ser vi att de båda är kvadrattal! $4x^2=(2x)^2$ och $25y^2=(5y)^2$ vilket betyder att vi kan tillämpa konjugatregeln och faktorisera uttrycket till $(2x+5y)(2x-5y)$.</p>
+                </section>
+                <section class="article-section">
+                    <h3 class="article-sub-heading">Uttryck med nämnare</h3>
+                    <p>Vi har spenderat mycket tid med uttryck och främst i kombination med tre av våra fyra räknesätt. Nu ska vi titta på hur det kan se ut när vi har uttryck med division.</p>
+                    <p>Innan vi kan tala om uttryck på bråkform behöver vi först repetera följande begrepp:</p>
+                    <p class="eq">$\frac{\text{täljare}}{\text{nämnare}}=\text{kvot}$</p>
+                    <p>Du kan tänka täljare som tak och nämnare som nere. Härligt, då kör vi!</p>
+                    <p>Exempel på uttryck med nämnare är $\frac{x}{3}$.</p>
+                    <p>Vi kan förenkla denna typ av uttryck också och då handlar det om att förkorta bråket med största gemensamma faktorn till täljaren och nämnaren.</p>
+                    <p><span class="bold">Exempel:</span> Förenkla uttrycket $\frac{12b}{3}$.</p>
+                    <p style="margin-bottom: 3rem;"><span class="bold">Lösning:</span> Vi ser att $12$ är delbart med $3$ och kan därför förkorta bråket med $3$ (dela både täljare och nämnare med $3$) och får då $\frac{\frac{12}{3}b}{\frac{3}{3}}=\frac{4b}{1}=4b$.</p>
+                    <p>Lite klurigare blir det när nämnaren är större än täljaren men även det går utmärkt att förenkla!</p>
+                    <p><span class="bold">Exempel:</span> Förenkla uttrycket $\frac{5}{30a}$</p>
+                    <p><span class="bold">Lösning:</span> Vi ser att $5$ och $30a$ har gemensam största faktor $5$ och förkortar därför uttrycket med $5$: $\frac{\frac{5}{5}}{\frac{30}{5}a}=\frac{1}{6a}$.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="inner-footer">
+            <span><p>&copy; qvick 2023</p></span>
+        </div>
+    </footer>
+</body>
+</html>
